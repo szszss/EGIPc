@@ -17,6 +17,7 @@ import java.awt.image.ImageObserver;
 import java.awt.image.ImageProducer;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 
 public class VWFrame extends JFrame {
 
@@ -49,9 +50,8 @@ public class VWFrame extends JFrame {
 		setContentPane(contentPane);
 		
 		try {
-			String path = this.getClass().getClassLoader().getResource("variowatch.jpg").getPath();
-			File file = new File(path.substring(1));
-			offscreen = ImageIO.read(file);
+			InputStream stream = this.getClass().getClassLoader().getResourceAsStream("variowatch.jpg");
+			offscreen = ImageIO.read(stream);
 		} catch (IOException e) {
 			 e.printStackTrace();
 		}

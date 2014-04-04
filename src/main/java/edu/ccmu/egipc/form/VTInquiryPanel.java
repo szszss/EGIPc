@@ -102,8 +102,8 @@ public class VTInquiryPanel extends JPanel implements II18Nable{
 	public void i18Ning() {
 		btnInquiry.setText(EgipcI18N.getText("Form.btnInquiry.Text"));
 		lblRsId.setText(EgipcI18N.getText("Form.lblRsId.Text"));
-		lblSymbol.setText(EgipcI18N.getText("Form.lblBasedVT.Text"));
-		lblBasedVT.setText(EgipcI18N.getText("Form.lblRiskAllele.Text"));
+		lblSymbol.setText(EgipcI18N.getText("Form.lblSymbol.Text"));
+		lblBasedVT.setText(EgipcI18N.getText("Form.lblBasedVT.Text"));
 		i18Ning_2();
 		//table.getColumnModel().getColumns().nextElement().
 	}
